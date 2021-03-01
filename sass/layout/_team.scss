@@ -1,0 +1,72 @@
+.team {
+  background-color: #f5f4fa;
+}
+
+.team-list {
+  display: flex;
+  align-items: center;
+}
+
+.team-list-item {
+  width: 270px;
+  background: var(--extra-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.team-list-img {
+  margin-bottom: 30px;
+}
+
+.team-list-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-text-title);
+  margin-bottom: 10px;
+}
+
+.team-list-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.188;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-text);
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 32px 30px;
+}
+
+.social-links-item {
+  width: 44px;
+  height: 44px;
+}
+
+.current-link {
+  background-color: var(--accent-color);
+
+  & .social-links-icon {
+    fill: var(--extra-color);
+  }
+}
+
+.social-links-icon {
+  fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .social-links-link:hover &,
+  .social-links-link:focus & {
+    fill: var(--extra-color);
+  }
+}

@@ -1,0 +1,44 @@
+body {
+  font-family: var(--text-font);
+  color: var(--color-text);
+  max-width: 1600px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.links {
+  text-decoration: none;
+}
+
+.lists {
+  list-style: none;
+}
+
+.address {
+  font-style: normal;
+}
+
+.padding-sections {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}

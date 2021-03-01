@@ -1,0 +1,35 @@
+.process {
+  padding-bottom: 94px;
+}
+
+.process-list {
+  display: flex;
+  align-items: center;
+}
+
+.process-list-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.process-wrapper {
+  position: relative;
+}
+
+.process-title {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 26px 0;
+  color: var(--extra-color);
+  background: rgba(47, 48, 58, 0.8);
+}
