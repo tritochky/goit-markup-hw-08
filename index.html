@@ -38,7 +38,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="burger-btn">
+        <button type="button" class="burger-btn" data-menu-button>
           <svg class="burger-icon">
             <use href="./images/sprite.svg#burger-menu"></use>
           </svg>
@@ -49,7 +49,7 @@
               class="contacts-mail-link links"
               href="mailto:info@devstudio.com"
             >
-              <svg class="contacts-icon" width="16" height="12">
+              <svg class="contacts-icon-envelope">
                 <use href="./images/sprite.svg#envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -57,7 +57,7 @@
           </li>
           <li class="contacts-list-item">
             <a class="contacts-tel-link links" href="tel:+380961111111">
-              <svg class="contacts-icon" width="10" height="16">
+              <svg class="contacts-icon-phone">
                 <use href="./images/sprite.svg#phone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -73,27 +73,29 @@
         </button>
         <ul class="mobile-menu-nav lists">
           <li class="mobile-menu-nav-item">
-            <a href="" class="mobile-menu-nav-link links">Студия</a>
+            <a href="#" class="mobile-menu-nav-link links current">Студия</a>
           </li>
           <li class="mobile-menu-nav-item">
-            <a href="" class="mobile-menu-nav-link links">Портфолио</a>
+            <a href="./portfolio.html" class="mobile-menu-nav-link links"
+              >Портфолио</a
+            >
           </li>
           <li class="mobile-menu-nav-item">
-            <a href="" class="mobile-menu-nav-link links">Контакты</a>
+            <a href="#" class="mobile-menu-nav-link links">Контакты</a>
           </li>
         </ul>
         <ul class="mobile-contacts-list lists">
+          <li class="mobile-contacts-list-item">
+            <a class="mobile-contacts-tel-link links" href="tel:+380961111111">
+              +38 096 111 11 11</a
+            >
+          </li>
           <li class="mobile-contacts-list-item">
             <a
               class="mobile-contacts-mail-link links"
               href="mailto:info@devstudio.com"
             >
               info@devstudio.com</a
-            >
-          </li>
-          <li class="mobile-contacts-list-item">
-            <a class="mobile-contacts-tel-link links" href="tel:+380961111111">
-              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -144,74 +146,73 @@
 
     <main>
       <!-- Hero -->
-      <!-- <section class="hero"> -->
-      <!-- <div class="container"> -->
-      <!-- <h1 class="hero-title"> -->
-      <!-- Эффективные решения <br />для вашего бизнеса -->
-      <!-- </h1> -->
-      <!-- <button type="button" class="button" data-modal-open> -->
-      <!-- Заказать услугу -->
-      <!-- </button> -->
-      <!-- </div> -->
-      <!-- </section> -->
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero-title">
+            Эффективные решения <br />для вашего бизнеса
+          </h1>
+          <button type="button" class="button" data-modal-open>
+            Заказать услугу
+          </button>
+        </div>
+      </section>
 
       <!-- Features -->
-      <!-- <section class="features padding-sections"> -->
-      <!-- <div class="container"> -->
-      <!-- <h2 class="title visually-hidden">Наши особенности</h2> -->
-      <!-- <ul class="features-list lists"> -->
-      <!-- <li class="features-list-item"> -->
-
-      <!-- <div class="features-icon"> -->
-      <!-- <svg class="features-icon-item"> -->
-      <!-- <use href="./images/sprite.svg#antenna"></use> -->
-      <!-- </svg> -->
-      <!-- </div> -->
-      <!-- <h3 class="subtitle">Внимание к деталям</h3> -->
-      <!-- <p class="description"> -->
-      <!-- Идейные соображения, а также начало повседневной работы по -->
-      <!-- формированию позиции. -->
-      <!-- </p> -->
-      <!-- </li> -->
-      <!-- <li class="features-list-item"> -->
-      <!-- <div class="features-icon"> -->
-      <!-- <svg class="features-icon-item"> -->
-      <!-- <use href="./images/sprite.svg#clock"></use> -->
-      <!-- </svg> -->
-      <!-- </div> -->
-      <!-- <h3 class="subtitle">Пунктуальность</h3> -->
-      <!-- <p class="description"> -->
-      <!-- Задача организации, в особенности же рамки и место обучения -->
-      <!-- кадров влечет за собой. -->
-      <!-- </p> -->
-      <!-- </li> -->
-      <!-- <li class="features-list-item"> -->
-      <!-- <div class="features-icon"> -->
-      <!-- <svg class="features-icon-item"> -->
-      <!-- <use href="./images/sprite.svg#computer"></use> -->
-      <!-- </svg> -->
-      <!-- </div> -->
-      <!-- <h3 class="subtitle">Планирование</h3> -->
-      <!-- <p class="description"> -->
-      <!-- Равным образом консультация с широким активом в значительной -->
-      <!-- степени обуславливает. -->
-      <!-- </p> -->
-      <!-- </li> -->
-      <!-- <li class="features-list-item"> -->
-      <!-- <div class="features-icon"> -->
-      <!-- <svg class="features-icon-item"> -->
-      <!-- <use href="./images/sprite.svg#astronaut"></use> -->
-      <!-- </svg> -->
-      <!-- </div> -->
-      <!-- <h3 class="subtitle">Современные технологии</h3> -->
-      <!-- <p class="description"> -->
-      <!-- Значимость этих проблем настолько очевидна, что реализация -->
-      <!-- плановых заданий. -->
-      <!-- </p> -->
-      <!-- </li> -->
-      <!-- </ul> -->
-      <!-- </div> -->
-      <!-- </section> -->
+      <section class="features padding-sections">
+        <div class="container">
+          <h2 class="title visually-hidden">Наши особенности</h2>
+          <ul class="features-list lists">
+            <li class="features-list-item">
+              <div class="features-icon">
+                <svg class="features-icon-item">
+                  <use href="./images/sprite.svg#antenna"></use>
+                </svg>
+              </div>
+              <h3 class="subtitle">Внимание к деталям</h3>
+              <p class="description">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li class="features-list-item">
+              <div class="features-icon">
+                <svg class="features-icon-item">
+                  <use href="./images/sprite.svg#clock"></use>
+                </svg>
+              </div>
+              <h3 class="subtitle">Пунктуальность</h3>
+              <p class="description">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li class="features-list-item">
+              <div class="features-icon">
+                <svg class="features-icon-item">
+                  <use href="./images/sprite.svg#computer"></use>
+                </svg>
+              </div>
+              <h3 class="subtitle">Планирование</h3>
+              <p class="description">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li class="features-list-item">
+              <div class="features-icon">
+                <svg class="features-icon-item">
+                  <use href="./images/sprite.svg#astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="subtitle">Современные технологии</h3>
+              <p class="description">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
 
       <!-- What we do -->
       <!-- <section class="process"> -->
@@ -639,5 +640,6 @@
     <!-- </div> -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
