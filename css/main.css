@@ -566,12 +566,12 @@ img {
   }
 }
 
-.features-list-item:not(:last-child) {
+.features-list .features-list-item:not(:last-child) {
   max-width: 270px;
   margin-right: 30px;
 }
 
-.features-icon {
+.features-list .features-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -584,12 +584,12 @@ img {
   margin-bottom: 30px;
 }
 
-.features-icon-item {
+.features-list .features-icon-item {
   width: 70px;
   height: 70px;
 }
 
-.subtitle {
+.features-list .subtitle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;
