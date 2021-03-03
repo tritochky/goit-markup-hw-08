@@ -65,8 +65,22 @@ img {
 }
 
 .padding-sections {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.padding-sections.features {
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .padding-sections {
+    padding-top: 46px;
+    padding-bottom: 46px;
+  }
+  .padding-sections.features {
+    padding-top: 94px;
+  }
 }
 
 .container {
@@ -307,7 +321,6 @@ img {
   .mobile-menu {
     position: absolute;
     width: 100%;
-    max-width: 480px;
     height: 100vh;
     top: 0;
     left: 50%;
