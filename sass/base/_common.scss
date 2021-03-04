@@ -39,21 +39,13 @@ img {
 }
 
 .padding-sections {
-  padding-top: 30px;
-  padding-bottom: 30px;
-
-  &.features {
-    padding-top: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .padding-sections {
-    padding-top: 46px;
-    padding-bottom: 46px;
-
-    &.features {
-      padding-top: 94px;
-    }
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
