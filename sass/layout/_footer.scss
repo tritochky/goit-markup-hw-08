@@ -29,22 +29,52 @@
   }
 }
 
+.for-tablet {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+  }
+}
+
 .logo-dark {
   color: var(--extra-color);
 }
 
 .contacts {
-  //   margin-right: 70px;
   display: flex;
-  align-items: center;
   flex-direction: column;
-  margin-bottom: 60px;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .contact-information-list {
   display: flex;
-  align-items: center;
   flex-direction: column;
+
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+  }
 }
 
 .contact-information-list-item {
@@ -69,8 +99,13 @@
 }
 
 .social-items {
-  text-align: center;
-  margin-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .call {
@@ -81,6 +116,7 @@
   text-transform: uppercase;
   color: var(--extra-color);
   margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 .social-footer {
@@ -90,18 +126,27 @@
 
 .mailing {
   display: flex;
-  align-items: center;
   flex-direction: column;
-  width: 100%;
-  //   min-width: 570px;
-  //   margin-left: auto;
+
+  @media screen and (max-width: 1199px) {
+    align-items: center;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 570px;
+    margin-left: auto;
+  }
 }
 
 .mailing-send {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 100%;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    width: 100%;
+  }
 }
 
 .mailing-mail {
@@ -116,8 +161,14 @@
   color: rgba(255, 255, 255, 0.6);
   padding: 0;
   padding-left: 16px;
-  margin-bottom: 20px;
-  // margin-right: 12px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 
   &::placeholder {
     font-weight: 400;

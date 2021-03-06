@@ -12,23 +12,28 @@
   letter-spacing: 0.03em;
   color: var(--color-text-title);
 
-  margin-bottom: 4px;
-
   .accent-logo {
     color: var(--accent-color);
   }
 
-  @media screen and (min-width: 768px) {
-    padding: 26px 0;
-    margin-right: 84px;
+  .header & {
+    @media screen and (min-width: 768px) {
+      padding: 26px 0;
+      margin-right: 84px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 26px;
+      line-height: 1.192;
+      color: #000000;
+      padding: 24px 0;
+      margin-right: 93px;
+    }
   }
 
-  @media screen and (min-width: 1200px) {
-    font-size: 26px;
-    line-height: 1.192;
-    color: #000000;
-    padding: 24px 0;
-    margin-right: 93px;
+  .footer & {
+    margin-right: 0;
+    margin-bottom: 4px;
   }
 }
 
