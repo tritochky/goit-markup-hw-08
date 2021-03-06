@@ -27,7 +27,6 @@ input[type="radio"].visually-hidden {
 body {
   font-family: var(--text-font);
   color: var(--color-text);
-  max-width: 1600px;
 }
 
 h1,
@@ -110,6 +109,19 @@ img {
   padding-bottom: 118px;
 }
 
+.footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -180,12 +192,6 @@ img {
 
 .button:hover, .button:focus {
   background-color: #188ce8;
-}
-
-.mailing-send .button {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .modal-form .button {
@@ -265,6 +271,7 @@ img {
   line-height: 1.167;
   letter-spacing: 0.03em;
   color: var(--color-text-title);
+  margin-bottom: 4px;
 }
 
 .logotype .accent-logo {
@@ -697,14 +704,8 @@ img {
 
 .footer {
   background: #2f303a;
-  padding-top: 60px;
+  padding-top: 44px;
   padding-bottom: 60px;
-}
-
-.footer .logotype {
-  display: block;
-  margin-right: 0;
-  margin-bottom: 20px;
 }
 
 .footer .social-links-item {
@@ -716,10 +717,6 @@ img {
   margin-right: 10px;
 }
 
-.footer .current-link {
-  background-color: var(--accent-color);
-}
-
 .footer .social-links-icon {
   fill: var(--extra-color);
 }
@@ -728,8 +725,35 @@ img {
   color: var(--extra-color);
 }
 
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 60px;
+}
+
+.contact-information-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .contact-information-list-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .contact-information-list-link {
@@ -747,8 +771,9 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.contacts {
-  margin-right: 70px;
+.social-items {
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .call {
@@ -771,20 +796,31 @@ img {
 }
 
 .mailing {
-  min-width: 570px;
-  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 
 .mailing-send {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .mailing-mail {
@@ -801,7 +837,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
   padding: 0;
   padding-left: 16px;
-  margin-right: 12px;
+  margin-bottom: 20px;
 }
 
 .mailing-mail::-webkit-input-placeholder {

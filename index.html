@@ -221,37 +221,82 @@
           <ul class="process-list lists">
             <li class="process-list-item">
               <div class="process-wrapper">
-                <img
-                  class="process-list-img"
-                  src="./images/what_we_do/img1.jpg"
-                  alt="Человек набирает программный код на компьютере"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/what_we_do/img1_webp.webp    1x,
+                      ./images/what_we_do/img1_webp@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/what_we_do/img1.jpg    1x,
+                      ./images/what_we_do/img1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="process-list-img"
+                    src="./images/what_we_do/img1.jpg"
+                    alt="Человек набирает программный код на компьютере"
+                  />
+                </picture>
                 <h3 class="process-title">Десктопные приложения</h3>
               </div>
             </li>
             <li class="process-list-item">
               <div class="process-wrapper">
-                <img
-                  class="process-list-img"
-                  src="./images/what_we_do/img2.jpg"
-                  alt="Человек проверяет на компьютере соответствие макета и готовой программы для мобильного телефона"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/what_we_do/img2_webp.webp    1x,
+                      ./images/what_we_do/img2_webp@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/what_we_do/img2.jpg    1x,
+                      ./images/what_we_do/img2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="process-list-img"
+                    src="./images/what_we_do/img2.jpg"
+                    alt="Человек проверяет на компьютере соответствие макета и готовой программы для мобильного телефона"
+                  />
+                </picture>
                 <h3 class="process-title">Мобильные приложения</h3>
               </div>
             </li>
             <li class="process-list-item">
               <div class="process-wrapper">
-                <img
-                  class="process-list-img"
-                  src="./images/what_we_do/img3.jpg"
-                  alt="Человек проверяет поведение программы на планшете"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/what_we_do/img3_webp.webp    1x,
+                      ./images/what_we_do/img3_webp@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/what_we_do/img3.jpg    1x,
+                      ./images/what_we_do/img3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    class="process-list-img"
+                    src="./images/what_we_do/img3.jpg"
+                    alt="Человек проверяет поведение программы на планшете"
+                  />
+                </picture>
                 <h3 class="process-title">Дизайнерские решения</h3>
               </div>
             </li>
@@ -265,13 +310,59 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team-list lists">
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./images/team/desktop/demyanenko_desktop.jpg"
-                alt="Улыбающийся мужчина в очках и с бородой, которого зовут Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/demyanenko_desktop_webp.webp    1x,
+                    ./images/team/desktop/demyanenko_desktop_webp@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/demyanenko_desktop.jpg    1x,
+                    ./images/team/desktop/demyanenko_desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/demyanenko_tablet_webp.webp    1x,
+                    ./images/team/tablet/demyanenko_tablet_webp@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/demyanenko_tablet.jpg    1x,
+                    ./images/team/tablet/demyanenko_tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/demyanenko_mobile_webp.webp    1x,
+                    ./images/team/mobile/demyanenko_mobile_webp@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/demyanenko_mobile.jpg    1x,
+                    ./images/team/mobile/demyanenko_mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-list-img"
+                  src="./images/team/mobile/demyanenko_mobile.jpg"
+                  alt="Улыбающийся мужчина в очках и с бородой, которого зовут Игорь Демьяненко"
+                />
+              </picture>
+
               <h3 class="team-list-name">Игорь Демьяненко</h3>
               <p class="team-list-position" lang="en">Product Designer</p>
               <ul class="social-links lists">
@@ -305,14 +396,61 @@
                 </li>
               </ul>
             </li>
+
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./images/team/desktop/repina_desktop.jpg"
-                alt="Улыбающаяся женщина в очках, которую зовут Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/repina_desktop_webp.webp    1x,
+                    ./images/team/desktop/repina_desktop_webp@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/repina_desktop.jpg    1x,
+                    ./images/team/desktop/repina_desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/repina_tablet_webp.webp    1x,
+                    ./images/team/tablet/repina_tablet_webp@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/repina_tablet.jpg    1x,
+                    ./images/team/tablet/repina_tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/repina_mobile_webp.webp    1x,
+                    ./images/team/mobile/repina_mobile_webp@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/repina_mobile.jpg    1x,
+                    ./images/team/mobile/repina_mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-list-img"
+                  src="./images/team/mobile/repina_mobile.jpg"
+                  alt="Улыбающаяся женщина в очках, которую зовут Ольга Репина"
+                />
+              </picture>
+
               <h3 class="team-list-name">Ольга Репина</h3>
               <p class="team-list-position" lang="en">Frontend Developer</p>
               <ul class="social-links lists">
@@ -346,14 +484,61 @@
                 </li>
               </ul>
             </li>
+
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./images/team/desktop/tarasov_desktop.jpg"
-                alt="Улыбающийся мужчина с бородой, которого зовут Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/tarasov_desktop_webp.webp    1x,
+                    ./images/team/desktop/tarasov_desktop_webp@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/tarasov_desktop.jpg    1x,
+                    ./images/team/desktop/tarasov_desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/tarasov_tablet_webp.webp    1x,
+                    ./images/team/tablet/tarasov_tablet_webp@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/tarasov_tablet.jpg    1x,
+                    ./images/team/tablet/tarasov_tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/tarasov_mobile_webp.webp    1x,
+                    ./images/team/mobile/tarasov_mobile_webp@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/tarasov_mobile.jpg    1x,
+                    ./images/team/mobile/tarasov_mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-list-img"
+                  src="./images/team/mobile/tarasov_mobile.jpg"
+                  alt="Улыбающийся мужчина с бородой, которого зовут Николай Тарасов"
+                />
+              </picture>
+
               <h3 class="team-list-name">Николай Тарасов</h3>
               <p class="team-list-position" lang="en">Marketing</p>
               <ul class="social-links lists">
@@ -387,14 +572,61 @@
                 </li>
               </ul>
             </li>
+
             <li class="team-list-item">
-              <img
-                class="team-list-img"
-                src="./images/team/desktop/ermakov_desktop.jpg"
-                alt="Улыбающийся мужчина в очках и с бородой, которого зовут Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/ermakov_desktop_webp.webp    1x,
+                    ./images/team/desktop/ermakov_desktop_webp@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/desktop/ermakov_desktop.jpg    1x,
+                    ./images/team/desktop/ermakov_desktop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/ermakov_tablet_webp.webp    1x,
+                    ./images/team/tablet/ermakov_tablet_webp@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/tablet/ermakov_tablet.jpg    1x,
+                    ./images/team/tablet/ermakov_tablet@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/ermakov_mobile_webp.webp    1x,
+                    ./images/team/mobile/ermakov_mobile_webp@2x.webp 2x
+                  "
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/team/mobile/ermakov_mobile.jpg    1x,
+                    ./images/team/mobile/ermakov_mobile@2x.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-list-img"
+                  src="./images/team/mobile/ermakov_mobile.jpg"
+                  alt="Улыбающийся мужчина в очках и с бородой, которого зовут Михаил Ермаков"
+                />
+              </picture>
+
               <h3 class="team-list-name">Михаил Ермаков</h3>
               <p class="team-list-position" lang="en">UI Designer</p>
               <ul class="social-links lists">
@@ -432,144 +664,144 @@
         </div>
       </section>
 
-      <!--CLIENTS-->
-      <!-- <section class="clients padding-sections"> -->
-      <!-- <div class="container"> -->
-      <!-- <h2 class="title">Постоянные клиенты</h2> -->
-      <!-- <ul class="clients-list lists"> -->
-      <!-- <li class="clients-list-item"> -->
-      <!-- <a class="client-link" href="/"> -->
-      <!-- <svg class="client-logo" width="44" height="50"> -->
-      <!-- <use href="./images/sprite.svg#logo1"></use> -->
-      <!-- </svg> -->
-      <!-- </a> -->
-      <!-- </li> -->
-      <!-- <li class="clients-list-item"> -->
-      <!-- <a class="client-link" href="/"> -->
-      <!-- <svg class="client-logo" width="40" height="52"> -->
-      <!-- <use href="./images/sprite.svg#logo2"></use> -->
-      <!-- </svg> -->
-      <!-- </a> -->
-      <!-- </li> -->
-      <!-- <li class="clients-list-item"> -->
-      <!-- <a class="client-link" href="/"> -->
-      <!-- <svg class="client-logo" width="40" height="42"> -->
-      <!-- <use href="./images/sprite.svg#logo3"></use> -->
-      <!-- </svg> -->
-      <!-- </a> -->
-      <!-- </li> -->
-      <!-- <li class="clients-list-item"> -->
-      <!-- <a class="client-link" href="/"> -->
-      <!-- <svg class="client-logo" width="80" height="42"> -->
-      <!-- <use href="./images/sprite.svg#logo4"></use> -->
-      <!-- </svg> -->
-      <!-- </a> -->
-      <!-- </li> -->
-      <!-- <li class="clients-list-item"> -->
-      <!-- <a class="client-link" href="/"> -->
-      <!-- <svg class="client-logo" width="60" height="48"> -->
-      <!-- <use href="./images/sprite.svg#logo5"></use> -->
-      <!-- </svg> -->
-      <!-- </a> -->
-      <!-- </li> -->
-      <!-- <li class="clients-list-item"> -->
-      <!-- <a class="client-link" href="/"> -->
-      <!-- <svg class="client-logo" width="88" height="46"> -->
-      <!-- <use href="./images/sprite.svg#logo6"></use> -->
-      <!-- </svg> -->
-      <!-- </a> -->
-      <!-- </li> -->
-      <!-- </ul> -->
-      <!-- </div> -->
-      <!-- </section> -->
+      <!-- CLIENTS-->
+      <section class="clients padding-sections">
+        <div class="container">
+          <h2 class="title">Постоянные клиенты</h2>
+          <ul class="clients-list lists">
+            <li class="clients-list-item">
+              <a class="client-link" href="/">
+                <svg class="client-logo" width="44" height="50">
+                  <use href="./images/sprite.svg#logo1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="client-link" href="/">
+                <svg class="client-logo" width="40" height="52">
+                  <use href="./images/sprite.svg#logo2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="client-link" href="/">
+                <svg class="client-logo" width="40" height="42">
+                  <use href="./images/sprite.svg#logo3"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="client-link" href="/">
+                <svg class="client-logo" width="80" height="42">
+                  <use href="./images/sprite.svg#logo4"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="client-link" href="/">
+                <svg class="client-logo" width="60" height="48">
+                  <use href="./images/sprite.svg#logo5"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-list-item">
+              <a class="client-link" href="/">
+                <svg class="client-logo" width="88" height="46">
+                  <use href="./images/sprite.svg#logo6"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <!--FOOTER-->
-    <!-- <footer class="footer"> -->
-    <!-- <div class="container"> -->
-    <!-- <div class="contacts"> -->
-    <!-- <a class="logotype links logo-dark" href="/" lang="en"> -->
-    <!-- <span class="accent-logo">Web</span>Studio -->
-    <!-- </a> -->
-    <!-- <address class="address"> -->
-    <!-- <ul class="contact-information-list lists"> -->
-    <!-- <li class="contact-information-list-item"> -->
-    <!-- <a -->
-    <!-- class="contact-information-list-link links contact-address" -->
-    <!-- href="https://goo.gl/maps/4wax39KtcL6fPzoCA" -->
-    <!-- target="_blank" -->
-    <!-- >г. Киев, пр-т Леси Украинки, 26</a -->
-    <!-- > -->
-    <!-- </li> -->
-    <!-- <li class="contact-information-list-item"> -->
-    <!-- <a -->
-    <!-- class="contact-information-list-link links contact-information" -->
-    <!-- href="mailto:info@devstudio.com" -->
-    <!-- >info@devstudio.com</a -->
-    <!-- > -->
-    <!-- </li> -->
-    <!-- <li class="contact-information-list-item"> -->
-    <!-- <a -->
-    <!-- class="contact-information-list-link links contact-information" -->
-    <!-- href="tel:+380961111111" -->
-    <!-- >+38 096 111 11 11</a -->
-    <!-- > -->
-    <!-- </li> -->
-    <!-- </ul> -->
-    <!-- </address> -->
-    <!-- </div> -->
-    <!-- <div class="social-items"> -->
-    <!-- <p class="call">присоединяйтесь</p> -->
-    <!-- <ul class="social-footer lists"> -->
-    <!-- <li class="social-links-item"> -->
-    <!-- <a class="social-links-link" href="/" aria-label="Инстаграмм"> -->
-    <!-- <svg class="social-links-icon" width="20" height="20"> -->
-    <!-- <use href="./images/sprite.svg#instagram"></use> -->
-    <!-- </svg> -->
-    <!-- </a> -->
-    <!-- </li> -->
-    <!-- <li class="social-links-item"> -->
-    <!-- <a class="social-links-link" href="/" aria-label="Твиттер"> -->
-    <!-- <svg class="social-links-icon" width="20" height="20"> -->
-    <!-- <use href="./images/sprite.svg#twitter"></use> -->
-    <!-- </svg> -->
-    <!-- </a> -->
-    <!-- </li> -->
-    <!-- <li class="social-links-item"> -->
-    <!-- <a class="social-links-link" href="/" aria-label="Фейсбук"> -->
-    <!-- <svg class="social-links-icon" width="20" height="20"> -->
-    <!-- <use href="./images/sprite.svg#facebook"></use> -->
-    <!-- </svg> -->
-    <!-- </a> -->
-    <!-- </li> -->
-    <!-- <li class="social-links-item"> -->
-    <!-- <a class="social-links-link" href="/" aria-label="Линкедин"> -->
-    <!-- <svg class="social-links-icon" width="20" height="20"> -->
-    <!-- <use href="./images/sprite.svg#linkedin"></use> -->
-    <!-- </svg> -->
-    <!-- </a> -->
-    <!-- </li> -->
-    <!-- </ul> -->
-    <!-- </div> -->
-    <!-- <div class="mailing"> -->
-    <!-- <p class="call">Подпишитесь на рассылку</p> -->
-    <!-- <form action="#" class="mailing-send"> -->
-    <!-- <input -->
-    <!-- type="mail" -->
-    <!-- name="mailing-mail" -->
-    <!-- placeholder="E-mail" -->
-    <!-- class="mailing-mail" -->
-    <!-- /> -->
-    <!-- <button type="submit" class="button"> -->
-    <!-- Подписаться -->
-    <!-- <svg class="mailing-icon" width="24" height="24"> -->
-    <!-- <use href="./images/sprite.svg#plane"></use> -->
-    <!-- </svg> -->
-    <!-- </button> -->
-    <!-- </form> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- </footer> -->
+    <footer class="footer">
+      <div class="container">
+        <div class="contacts">
+          <a class="logotype links logo-dark" href="/" lang="en">
+            <span class="accent-logo">Web</span>Studio
+          </a>
+          <address class="address">
+            <ul class="contact-information-list lists">
+              <li class="contact-information-list-item">
+                <a
+                  class="contact-information-list-link links contact-address"
+                  href="https://goo.gl/maps/4wax39KtcL6fPzoCA"
+                  target="_blank"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="contact-information-list-item">
+                <a
+                  class="contact-information-list-link links contact-information"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="contact-information-list-item">
+                <a
+                  class="contact-information-list-link links contact-information"
+                  href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="social-items">
+          <p class="call">присоединяйтесь</p>
+          <ul class="social-footer lists">
+            <li class="social-links-item">
+              <a class="social-links-link" href="/" aria-label="Инстаграмм">
+                <svg class="social-links-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-item">
+              <a class="social-links-link" href="/" aria-label="Твиттер">
+                <svg class="social-links-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-item">
+              <a class="social-links-link" href="/" aria-label="Фейсбук">
+                <svg class="social-links-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links-item">
+              <a class="social-links-link" href="/" aria-label="Линкедин">
+                <svg class="social-links-icon" width="20" height="20">
+                  <use href="./images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="mailing">
+          <p class="call">Подпишитесь на рассылку</p>
+          <form action="#" class="mailing-send">
+            <input
+              type="mail"
+              name="mailing-mail"
+              placeholder="E-mail"
+              class="mailing-mail"
+            />
+            <button type="submit" class="button">
+              Подписаться
+              <svg class="mailing-icon" width="24" height="24">
+                <use href="./images/sprite.svg#plane"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
 
     <!--MAIN-MODAL-WINDOW-->
     <!-- <div class="backdrop is-hidden" data-modal> -->
