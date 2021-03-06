@@ -19,14 +19,6 @@
   & .social-links-icon {
     fill: var(--extra-color);
   }
-
-  @media screen and (min-width: 1200px) {
-    //   & .logotype {
-    //     display: block;
-    //     margin-right: 0;
-    //     margin-bottom: 20px;
-    //   }
-  }
 }
 
 .for-tablet {
@@ -38,10 +30,13 @@
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 40px;
+    justify-content: space-around;
+    width: 100%;
   }
 
   @media screen and (min-width: 1200px) {
     align-items: baseline;
+    justify-content: space-between;
   }
 }
 
@@ -59,7 +54,6 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-right: 165px;
     margin-bottom: 0;
   }
 
