@@ -90,6 +90,7 @@
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: scroll;
     z-index: 2;
+    justify-content: space-between;
   }
 
   .mobile-menu.is-open {
