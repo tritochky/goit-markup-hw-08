@@ -359,6 +359,7 @@ img {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: scroll;
+    z-index: 2;
   }
   .mobile-menu.is-open {
     -webkit-transform: translateX(-50%) translateY(0%);
@@ -1201,13 +1202,18 @@ img {
           align-items: center;
 }
 
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .mailing-send {
+    width: 450px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .mailing-send {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 100%;
   }
 }
 
@@ -1292,12 +1298,27 @@ img {
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
-  height: 580px;
+  width: 90%;
+  height: 90%;
+  overflow: scroll;
   background-color: var(--extra-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    max-height: 610px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 580px;
+  }
 }
 
 .modal-close-btn {
@@ -1360,13 +1381,13 @@ img {
   line-height: 1.167;
   letter-spacing: 0.01em;
   color: var(--color-text);
-  margin-bottom: 10px;
+  margin-bottom: 4px;
 }
 
 .modal-form-input-wrapper {
   display: block;
   position: relative;
-  margin-top: 4px;
+  margin-bottom: 10px;
 }
 
 .modal-form-input {
@@ -1417,7 +1438,6 @@ img {
   -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 12px 16px;
-  margin-top: 4px;
   margin-bottom: 20px;
 }
 
@@ -1473,14 +1493,19 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   color: var(--color-text);
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-label-policy {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .modal-form-label-policy::before {
@@ -1505,7 +1530,7 @@ img {
   border: 2px solid var(--accent-color);
 }
 
-.modal-form-label-policy a {
+.modal-form-label-policy .policy-link {
   color: var(--accent-color);
 }
 /*# sourceMappingURL=main.css.map */

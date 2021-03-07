@@ -1,9 +1,9 @@
 .portfolio-list {
   display: flex;
-  align-items: center;
 
   @media screen and (max-width: 767px) {
     flex-direction: column;
+    align-items: center;
   }
 
   @media screen and (min-width: 768px) {
@@ -13,19 +13,26 @@
 }
 
 .portfolio-list-item {
-  //   width: 370px;
   background: var(--extra-color);
   box-sizing: border-box;
-
   outline: 1px solid #eeeeee;
 
-  &:not(:last-child) {
-    margin-bottom: 30px;
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 354px;
   }
 
   @media screen and (min-width: 768px) {
-    width: 354px;
     margin: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
   }
 }
 
